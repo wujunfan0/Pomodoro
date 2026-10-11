@@ -1,2 +1,4 @@
 # Pomodoro
-Pomodoro timer to keep track of your focus time.
+Pomodoro timer lets you keep track of your focus time 
+
+DEMO: 

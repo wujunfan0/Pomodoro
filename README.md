@@ -18,7 +18,7 @@ Double click index.html to open it directly on your web browser
 How it works:
 Instead of building a standard timer that leaves you staring at a clock my pomodoro timer allows you to play cookie clicker in between breaks to keep users engaged and focused.
 
-Demo Link: https://wujunfan0.github.io/Password-Generator/
+Demo Link: https://wujunfan0.github.io/Pomodoro/
 
 This is inspired by the classic pomodoro technique and the cookie clicker game
 Languages Used: HTML, CSS, JavaScript

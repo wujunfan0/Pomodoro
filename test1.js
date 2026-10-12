@@ -21,5 +21,3 @@ if (userTask === "") {
 } else {
     console.log("Great! Starting timer for: " + userTask);
 }
-
-//l

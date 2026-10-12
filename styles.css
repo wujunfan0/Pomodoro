@@ -80,3 +80,107 @@ h1 {
     font-size: 13px;
     color: #666;
 }
+.mode-selector {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.mode-selector button {
+    background-color: #f1f2f6;
+     color: #2f3542;
+    border: 2px solid #dfe4ea;
+    padding: 8px 14px;
+     border-radius: 20px;
+    font-size: 13px;
+     font-weight: 600;
+cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.mode-selector button:hover {
+     background-color: #ced6e0;
+    border-color: #ced6e0;
+}
+
+.mode-selector button.active {
+     background-color: #ff4757;
+    color: white;
+      border-color: #ff4757;
+}
+body {
+    background: linear-gradient(-45deg, #8652ee, #2f3ab8, #8c3ade, #566ce8);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.watermark {
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    font-size: 12px;
+    font-family: sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+    pointer-events: none;
+    letter-spacing: 0.5px;
+}
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-image: 
+        radial-gradient(2px 2px at 20px 30px, #ffffff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 40px 70px, #ffffff, rgba(0,0,0,0)),
+        radial-gradient(1px 1px at 90px 40px, #ffffff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 160px 120px, #ffffff, rgba(0,0,0,0)),
+        radial-gradient(1.5px 1.5px at 230px 200px, #ffffff, rgba(0,0,0,0));
+    background-repeat: repeat;
+    background-size: 300px 300px;
+    animation: flicker 4s infinite alternate;
+    opacity: 0.8;
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+.stealth-btn {
+    position: fixed;
+    bottom: 15px;
+    left: 20px;
+    font-size: 14px;
+    text-decoration: none;
+    opacity: 0.15;
+    transition: opacity 0.3s ease;
+}
+
+.stealth-btn:hover {
+    opacity: 1.0;
+}

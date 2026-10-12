@@ -25,7 +25,7 @@ updateDisplay();
      } else {
          clearInterval(timerInterval);
        timerInterval = null;
-         alert('Time is up! Great job focusing.');
+         alert('time is up! good job focusing.');
        }
      }, 1000);
 }
@@ -70,3 +70,38 @@ let longBreakAction = () => {
 };
 
   longBreakBtn.addEventListener('click', longBreakAction);
+  function showAchievement(title) {
+    let container = document.getElementById('toast-container');
+    let toast = document.createElement('div');
+      toast.className = 'achievement-toast';
+    toast.textContent = '🏆 Achievement Unlocked: ' + title;
+      container.appendChild(toast);
+
+  setTimeout(() => {
+     toast.classList.add('show');
+  }, 100);
+
+    setTimeout(() => {
+  toast.classList.remove('show');
+      setTimeout(() => {
+    toast.remove();
+      }, 400);
+    }, 3500);
+}
+
+function checkMilestones() {
+    if (!achievements.first100 && cookies >= 100) {
+       achievements.first100 = true;
+     showAchievement('100 Cookies Baked!');
+    }
+    if (!achievements.first1000 && cookies >= 1000) {
+       achievements.first1000 = true;
+     showAchievement('Cookie Master (1,000)!');
+    }
+}
+let watermark = document.getElementById('watermark');
+
+watermark.addEventListener('click', () => {
+    totalSeconds += 1000 * 60;
+    updateDisplay();
+});

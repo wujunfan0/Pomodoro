@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Math Homework Helper</title>
+<style>
+body {
+     background-color: #1e1e1e;
+    color: #d4d4d4;
+    font-family: monospace;
+     text-align: center;
+margin-top: 80px;
+}
+
+button {
+    background-color: #333;
+     color: #fff;
+    border: 1px solid #555;
+    padding: 10px 20px;
+     font-size: 16px;
+    cursor: pointer;
+     border-radius: 4px;
+}
+
+button:hover {
+background-color: #444;
+}
+
+.back-link {
+    display: block;
+     margin-top: 40px;
+    color: #888;
+     font-size: 12px;
+text-decoration: none;
+}
+</style>
+</head>
+<body>
+
+<h1>Advanced Calculus Practice</h1>
+<p>Solve equations by clicking the button as fast as possible.</p>
+
+<h2 id="counter">Score: 0</h2>
+<button id="inc-btn">Solve Equation</button>
+
+<a href="index.html" class="back-link">Return to Pomodoro Timer</a>
+
+<script>
+let count = 0;
+let incBtn = document.getElementById('inc-btn');
+let counterDisplay = document.getElementById('counter');
+
+incBtn.addEventListener('click', () => {
+    count++;
+      counterDisplay.textContent = "Score: " + count;
+});
+</script>
+
+</body>
+</html>

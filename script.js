@@ -45,3 +45,28 @@ function resetTimer() {
 startBtn.addEventListener('click', startTimer);
   pauseBtn.addEventListener('click', pauseTimer);
 resetBtn.addEventListener('click', resetTimer);
+
+let focusBtn = document.getElementById('focus-btn');
+let shortBreakBtn = document.getElementById('short-break-btn');
+let longBreakBtn = document.getElementById('long-break-btn');
+
+function setMode(seconds) {
+    clearInterval(timerInterval);
+timerInterval = null;
+      totalSeconds = seconds;
+    updateDisplay();
+}
+
+      focusBtn.addEventListener('click', () => {
+  setMode(1500);
+});
+
+    shortBreakBtn.addEventListener('click', () => {
+setMode(300);
+    });
+
+let longBreakAction = () => {
+  setMode(900);
+};
+
+  longBreakBtn.addEventListener('click', longBreakAction);

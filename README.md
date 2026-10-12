@@ -1,24 +1,24 @@
-# Pomodoro
-Pomodoro timer lets you keep track of your focus time to prevent you from slacking off
+A pomodoro timer that is also secretly disguised as a cookie clicker clone during your focus breaks
 
-This is a Pomodoro focus timer I built that has secret feature that allows you to play a cookie clicker game built by me!
+How to use: 
+-Open the live demo link in any browser. 
+-Select the desired focus time
+-Click start timer and start focusing!
 
-Languages: HTML, CSS, JavaScript
+Features: 
+-Dual mode engine, you can switch between a pomodoro focs timer and an addictive cookie clicker minigame
+-Clicker upgrades, ear cookies faster by buying multipliers and auto clikers
+-Customizable intervals, easily select your desired time that fir your personal workfow
 
-DEMO: https://wujunfan0.github.io/Pomodoro/
+How to run it locally: 
+-Clone or download this repo 
+-Open the project folder -
+Double click index.html to open it directly on your web browser
 
-How to start:
--Open the live demo
--or Clone and run locally
+How it works:
+Instead of building a standard timer that leaves you staring at a clock my pomodoro timer allows you to play cookie clicker in between breaks to keep users engaged and focused.
 
-Features:
--Dual interface, operating under a cookie clicker game to have fun during breaks
--Smart Pomodoro Timer, including standard focus(25m), short breaks(5m) etc.
--Tracks amount of focus sessions
+Demo Link: https://wujunfan0.github.io/Password-Generator/
 
-How to run it locally:
-
--CLone the repo
--Open index.html in your browser or spin up a local development server for best experience
-
-Inspired by classic Pomodoro techniques and the timeless addictive loops of small idle games.
+This is inspired by the classic pomodoro technique and the cookie clicker game
+Languages Used: HTML, CSS, JavaScript
